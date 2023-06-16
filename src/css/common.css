@@ -1,0 +1,18 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header, .footer{
+    background-color: #333;
+    color: #ffffff;
+    padding: 90px;
+    text-align: center;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
