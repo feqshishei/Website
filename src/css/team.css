@@ -1,0 +1,140 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.team-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction:column;
+    font-family: "Poppins", sans-serif;
+}
+
+.team-wrapper{
+    background:#fff;
+    min-width:1200px;  
+    border-radius:15px;
+    padding:20px;
+    margin: 0 auto; /* This centers the .team-wrapper horizontally */
+}
+
+.team-wrapper h2{
+    text-align:center;
+    color:#4e5365;
+    font-size: 30px;
+}
+
+hr{
+    width:130px;
+    border-top: 3px solid #84a88e;
+    margin:10px auto;
+}
+
+.members{
+    display:flex;
+    justify-content: space-between;
+}
+
+.team-mem {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.team-wrapper img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin:15px;
+    border: 3.5px solid #505568;
+}
+
+.team-wrapper img:hover{
+    border: 3.5px solid #ffab90;
+}
+
+.team-wrapper h4 {
+    color:#4e5365;
+    text-align: center;
+    font-size: 15px;
+    margin: 7px;
+}
+
+.team-wrapper p{
+    color:#4e5365;
+    text-align: center;
+    font-size: 14px;
+    margin: 7px;
+}
+
+.team-wrapper-first {
+    margin-top: -100px;
+    margin-bottom: -39px; /* adjust as needed */
+}
+
+.team-wrapper-second .team-mem{
+    margin-top: -20px;
+}
+
+/* info css */
+
+.info-container{
+    width: 800px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #84a88e5b;
+    /* background: linear-gradient(#E8E6D9 0%, #a0a9cf 100%); */
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 17px;
+    border-radius: 20px;
+    /* box-shadow: 10px 10px 15px rgba(0,0,0,0.15); */
+    color: #25272f;
+    font-family: "Poppins", sans-serif;
+    border: 3.5px double #84a88e;
+}
+
+.profile{
+    width: 230px;
+    height: 220px;
+    border-radius: 50%;
+    /* padding: 10px; */
+    margin-left: 20px;
+}
+
+.member-name{
+    margin-top: 80px;
+    padding: 0px 15px;
+    text-align: left;
+    font-size: 25px;
+    line-height: 20px;
+    color: #373a49;
+}
+
+.status{
+    padding: 0px 20px;
+    text-align: left;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #373a49;
+}
+
+.about{
+    height:210px;
+    font-size: 14.5px;
+    padding: 0px 20px;
+    color: #373a49;
+}

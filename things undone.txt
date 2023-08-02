@@ -1,3 +1,8 @@
-cite the icon used
-<a href="https://www.flaticon.com/free-icons/ecosystem" title="ecosystem icons">Ecosystem icons created by Chattapat - Flaticon</a>
+1. cite the icon used
+    <a href="https://www.flaticon.com/free-icons/ecosystem" title="ecosystem icons">Ecosystem icons created by Chattapat - Flaticon</a>
 
+2. mailchimp-> 1. email back/newsletter
+3. change the background of the contact us form to white
+4. reference contact picture <a href="https://storyset.com/internet">Internet illustrations by Storyset</a>
+5. checkbox now does nothing, need to verify
+6. what does pd dev mean?

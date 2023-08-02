@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline:none; 
+    border:0cm;
+    box-sizing: border-box;
+}
+
+.form-wrapper{
+    width:600px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,0.1); */
+    border-radius:8px;
+}
+
+.form-wrapper .input-data{
+    position:relative;
+    width: 85%;
+    height: 40px;
+}
+
+.form-wrapper .input-data input{
+    width:100%;
+    height:100%;
+    border:none;
+    font-size:15px;
+    border-bottom: 2px solid #c0c0c0;
+}
+
+.form-wrapper .input-data input:focus ~ label, 
+
+.form-wrapper .input-data input:valid ~ label{
+/* change the fontsize & color when click on the label*/
+    transform: translateY(-25px);
+    font-size: 15px;
+    color: #62948b;
+}
+
+.form-wrapper .input-data label{
+    font-size: small;
+    position:absolute;
+    bottom: 10px;
+    left: 0px;
+    color: #808080;
+    /* allow label to go through input box */
+    pointer-events: none;
+    /* add transition to animation */
+    transition: all 0.3s ease;
+    margin-left:13px;
+}
+
+.form-wrapper .input-data .underline{
+    position: absolute;
+    bottom: 0px;
+    height:1px;
+    width: 100%;
+    background-color: #62948b;
+    transform: scaleX(0);
+    transition: all 0.2s ease;
+}
+
+.form-wrapper .input-data input:focus ~ .underline,
+.form-wrapper .input-data input:valid ~ .underline{
+/* zoom in along x axis */
+    transform: scaleX(1);
+}
+
+/* form css */
+
+.contact-form {
+    box-sizing: border-box;
+    width: 100%;
+    height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    padding-left: 200px;
+    justify-content: center;
+    width:90%;
+    max-width: 820px;
+}
+
+.form h3{
+    font-size: 230%;
+    margin-bottom: 40px;
+    text-align: left;
+    padding-left:1px;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 200;
+    /* color:#2e303f; */
+    color: #505568;
+}
+
+.form label{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    margin-bottom: 0px;
+    color:#808080;
+    display: block;
+}
+
+.form input{
+    margin-top: 0px; 
+}
+
+select, textarea{
+    width: 104%; 
+    box-sizing: border-box;
+}
+
+
+.form input[type="text"], form textarea, form select{
+    border:0;
+    margin:10px, 0px;
+    padding:10px;
+    outline:#252525;
+    font-size: 14px;
+    background-color: #f3f3f3;
+}
+
+.form select{
+    color: #62948b;
+}
+
+.form button{
+    padding:13px;
+    background:#84a88e;
+    color:#fff;
+    font-size:16px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    width: 120px;
+    margin:15px auto 0;
+    border-radius: 30px;
+}
+
+.contact-image{
+    width:550px;
+    margin-right:80px;
+}
+
+.contact-page {
+    display: flex;
+    align-items: center;
+  }
+  
+
+.checkbox-wrapper {
+    display: flex;  
+    align-items: center; 
+    padding-bottom:8px;
+  }
+
+/* hide the original checkbox */
+.checkbox-wrapper .custom-checkbox input {
+    display: none;
+  }
+  
+  /* create the customize checkbox */
+  .checkbox-wrapper .custom-checkbox .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #62948b;
+    position: relative;
+    margin-right: 10px;
+    cursor:pointer;
+  }
+  
+  /* define the checkbox fill when it's been checked*/
+  .checkbox-wrapper .custom-checkbox input:checked ~ .checkmark {
+    background: #62948b;
+  }
+  
+  /* create the "checkmark' symbol after it's been selected */
+  .checkbox-wrapper .custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-wrapper .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* color, position of the checkmark */
+  .checkbox-wrapper .custom-checkbox .checkmark:after {
+    left: 5px;
+    top: 1.7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .checkbox-wrapper .custom-checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  

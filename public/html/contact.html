@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <!-- this below content appear when we search the website on a search engine -->
+    <meta name="description" content="..." />
+    <meta name="keywords" content="..." />
+    <title>Mobile Design Studios [MODS]</title>
+    <!-- link to the css stylesheet for the website -->
+    <link rel="stylesheet" type="text/css" href="../css/banner.css" />
+    <link rel="stylesheet" type="text/css" href="../css/navbar6.css" />
+    <link rel="stylesheet" type="text/css" href="../css/form.css" />
+    <!-- add a website icon -->
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <!-- add font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/14a55960af.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-content">
+      <div class="header-text">
+        <h1><b>Mobile Design Studios - MODS</b></h1>
+        <h2 class="biggerfont">
+          Supporting Secondary Students Earth Science Knowledge and Engineering
+          Design Skills with Mobile Design Studios
+        </h2>
+      </div>
+      <div class="header-right">
+        <img src="../images/sticky-note.jpg" class="header-image" />
+        <div class="image-caption">Upcoming Conference:</div>
+      </div>
+    </div>
+    <div class="nbar">
+      <div class="na">
+        <ul>
+          <li data-nav="home">
+            <a href="main-page.html">Home</a>
+          </li>
+          <li data-nav="curriculum">
+            <a href="curriculum.html">Curriculum</a>
+            <ol>
+              <li>
+                <a href="overview.html">Overview</a>
+              </li>
+              <li>
+                <a href="design-problems.html">Design Problems</a>
+              </li>
+              <li>
+                <a href="clue.html">CLUE</a>
+              </li>
+            </ol>
+          </li>
+          <li data-nav="resources">
+            <a href="resources.html">Teacher Resources</a>
+            <ol>
+              <li>
+                <a href="teachers-guide.html">Teacher's Guide</a>
+              </li>
+              <li>
+                <a href="tutorial.html">Video Tutorials</a>
+              </li>
+            </ol>
+          </li>
+          <li data-nav="research">
+            <a href="research.html">Research</a>
+            <ol>
+              <li>
+                <a href="ideas-behind.html">Ideas Behind</a>
+              </li>
+              <li>
+                <a href="published-papers.html">Published Papers</a>
+              </li>
+              <li>
+                <a href="past-conferences.html">Past Conferences</a>
+              </li>
+            </ol>
+          </li>
+          <li data-nav="meet-the-team">
+            <a href="meet-the-team.html">Meet the Team</a>
+          </li>
+          <li data-nav="Contact">
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <!-- underline element are used to define sliding segments -->
+          <li class="underline"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="contact-page">
+      <div class="contact-form">
+        <form
+          class="form"
+          action="https://formsubmit.co/MODS.design.platform@gmail.com"
+          method="POST"
+        >
+          <h3>We'd love to hear from you!</h3>
+          <div class="form-wrapper">
+            <div class="input-data">
+              <input type="text" id="name" required />
+              <div class="underline"></div>
+              <label>*Your Name</label>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <div class="input-data">
+              <input type="text" id="email" required />
+              <div class="underline"></div>
+              <label for="email">*Email Address</label>
+            </div>
+          </div>
+          <label for="country">Country & Region:</label><br />
+          <select id="country" name="country">
+            <option value="">Select...</option></select
+          ><br />
+          <div class="form-wrapper">
+            <div class="input-data">
+              <input type="text" id="jobtitle" required />
+              <div class="underline"></div>
+              <label for="jobtitle">*Job Title</label>
+            </div>
+          </div>
+          <div class="form-wrapper">
+            <div class="input-data">
+              <input type="text" id="organization" required />
+              <div class="underline"></div>
+              <label for="organization">*Organization</label>
+            </div>
+          </div>
+          <textarea
+            name="message"
+            id="message"
+            cols="25"
+            rows="10"
+            placeholder="Ask a question, request information, or make a suggestion"
+          ></textarea
+          ><br />
+          <div class="checkbox-wrapper">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="checkbox" class="checkbox" />
+              <span class="checkmark"></span>
+              Click to sign up for our biannually newsletter
+            </label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="contact-pic">
+        <img src="../images/contact.png" class="contact-image" />
+      </div>
+    </div>
+    <script>
+      var countries = [
+        "Afghanistan",
+        "Albania",
+        "Algeria",
+        "Andorra",
+        "Angola",
+        "Antigua and Barbuda",
+        "Argentina",
+        "Armenia",
+        "Australia",
+        "Austria",
+        "Azerbaijan",
+        "Bahamas",
+        "Bahrain",
+        "Bangladesh",
+        "Barbados",
+        "Belarus",
+        "Belgium",
+        "Belize",
+        "Benin",
+        "Bhutan",
+        "Bolivia",
+        "Bosnia and Herzegovina",
+        "Botswana",
+        "Brazil",
+        "Brunei",
+        "Bulgaria",
+        "Burkina Faso",
+        "Burundi",
+        "Cabo Verde",
+        "Cambodia",
+        "Cameroon",
+        "Canada",
+        "Central African Republic",
+        "Chad",
+        "Chile",
+        "China",
+        "Colombia",
+        "Comoros",
+        "Congo",
+        "Costa Rica",
+        "Cote d'Ivoire",
+        "Croatia",
+        "Cuba",
+        "Cyprus",
+        "Czechia",
+        "Denmark",
+        "Djibouti",
+        "Dominica",
+        "Dominican Republic",
+        "Ecuador",
+        "Egypt",
+        "El Salvador",
+        "Equatorial Guinea",
+        "Eritrea",
+        "Estonia",
+        "Eswatini",
+        "Ethiopia",
+        "Fiji",
+        "Finland",
+        "France",
+        "Gabon",
+        "Gambia",
+        "Georgia",
+        "Germany",
+        "Ghana",
+        "Greece",
+        "Grenada",
+        "Guatemala",
+        "Guinea",
+        "Guinea-Bissau",
+        "Guyana",
+        "Haiti",
+        "Honduras",
+        "HongKong",
+        "Hungary",
+        "Iceland",
+        "India",
+        "Indonesia",
+        "Iran",
+        "Iraq",
+        "Ireland",
+        "Israel",
+        "Italy",
+        "Jamaica",
+        "Japan",
+        "Jordan",
+        "Kazakhstan",
+        "Kenya",
+        "Kiribati",
+        "Korea, North",
+        "Korea, South",
+        "Kuwait",
+        "Kyrgyzstan",
+        "Laos",
+        "Latvia",
+        "Lebanon",
+        "Lesotho",
+        "Liberia",
+        "Libya",
+        "Liechtenstein",
+        "Lithuania",
+        "Luxembourg",
+        "Macau",
+        "Madagascar",
+        "Malawi",
+        "Malaysia",
+        "Maldives",
+        "Mali",
+        "Malta",
+        "Marshall Islands",
+        "Mauritania",
+        "Mauritius",
+        "Mexico",
+        "Micronesia",
+        "Moldova",
+        "Monaco",
+        "Mongolia",
+        "Montenegro",
+        "Morocco",
+        "Mozambique",
+        "Myanmar",
+        "Namibia",
+        "Nauru",
+        "Nepal",
+        "Netherlands",
+        "New Zealand",
+        "Nicaragua",
+        "Niger",
+        "Nigeria",
+        "North Macedonia",
+        "Norway",
+        "Oman",
+        "Pakistan",
+        "Palau",
+        "Palestine",
+        "Panama",
+        "Papua New Guinea",
+        "Paraguay",
+        "Peru",
+        "Philippines",
+        "Poland",
+        "Portugal",
+        "Qatar",
+        "Romania",
+        "Russia",
+        "Rwanda",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "Samoa",
+        "San Marino",
+        "Sao Tome and Principe",
+        "Saudi Arabia",
+        "Senegal",
+        "Serbia",
+        "Seychelles",
+        "Sierra Leone",
+        "Singapore",
+        "Slovakia",
+        "Slovenia",
+        "Solomon Islands",
+        "Somalia",
+        "South Africa",
+        "South Sudan",
+        "Spain",
+        "Sri Lanka",
+        "Sudan",
+        "Suriname",
+        "Sweden",
+        "Switzerland",
+        "Syria",
+        "Taiwan",
+        "Tajikistan",
+        "Tanzania",
+        "Thailand",
+        "Timor-Leste",
+        "Togo",
+        "Tonga",
+        "Trinidad and Tobago",
+        "Tunisia",
+        "Turkey",
+        "Turkmenistan",
+        "Tuvalu",
+        "Uganda",
+        "Ukraine",
+        "United Arab Emirates",
+        "United Kingdom",
+        "United States",
+        "Uruguay",
+        "Uzbekistan",
+        "Venezuela",
+        "Vietnam",
+        "Yemen",
+        "Zambia",
+        "Zimbabwe",
+      ];
+
+      var select = document.getElementById("country");
+
+      for (var i = 0; i < countries.length; i++) {
+        var opt = document.createElement("option");
+        opt.value = countries[i];
+        opt.innerHTML = countries[i];
+        select.appendChild(opt);
+      }
+    </script>
+    <div class="footer-logo">
+      <!-- create a flex box to contain the 3 logo images -->
+      <div class="footer-images">
+        <a href="https://www.buffalo.edu/" target="_blank">
+          <img
+            src="../images/UB_Secondary.png"
+            alt="University at Buffalo logo"
+            width="200"
+        /></a>
+        <a href="https://umich.edu/" target="_blank">
+          <img
+            src="../images/umich-logo.jpg"
+            alt="University of Michigan logo"
+            width="90"
+        /></a>
+        <a href="https://concord.org/">
+          <img
+            src="../images/concord-logo.png"
+            alt="Concord Consortium logo"
+            width="150"
+        /></a>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-nsf">
+        <a href="https://www.nsf.gov/" target="_blank">
+          <img src="../images/nsf-logo.png" alt="NSF logo" width="100" />
+        </a>
+      </div>
+      <div class="disclaimer">
+        <p>
+          This material is based upon work supported by the National Science
+          Foundation under Grant No.2201215. Any opinions, findings, and
+          conclusions or recommendations expressed in this material are those of
+          the author(s) and do not necessarily reflect the views of the National
+          Science Foundation.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

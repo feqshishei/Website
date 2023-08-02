@@ -1,0 +1,220 @@
+*{
+  padding:0;
+  margin:0;
+  border:0cm;
+}
+
+img {
+  /* removes any border from images */
+  border: 0;
+  /* aligns images vertically in the middle of their containing element */
+  vertical-align: middle
+}
+
+button {
+  /* changes the cursor to a hand when it hovers over button elements */
+  cursor: pointer
+}
+
+button,input {
+  /* Set fonts for button and input elements & removes borders and outlines */
+  font-family: Arial, Helvetica, sans-serif;
+  border: 0;
+  outline: none;
+}
+
+body .header-content{
+  /* applies antialiasing to fonts for smoother appearance */
+  font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+}
+
+.hide,.none {
+  /* add to any html element to hide it */
+  display: none
+}
+
+.clearfix::after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0
+}
+
+.clearfix {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.footer-logo{
+  background-color:#fff;
+  color:white;
+  text-align: center; 
+}
+
+.footer{
+    color:white;
+    text-align: center; 
+}
+
+h1 {
+  font-size: 4em;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.biggerfont {
+  font-size:140%;
+  font-style:italic;
+}
+
+.header-right {
+  align-items: center;
+  position:relative;
+}
+
+.image-caption {
+  margin-left: 10px; 
+  position: absolute;
+  top: 10px;  
+  left: 10px;
+  color:#88937d; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px; 
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  background-color: #84a88e;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.header-image {
+  width: 430px; 
+  height:100px;
+  margin-left: 10px; 
+  margin-right:10px;
+  filter: brightness(1.1) saturate(1.0);
+}
+
+.header-right img {
+  border-radius: 5px; 
+}
+
+.heading{
+  text-align: center;
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.info-container{
+   width: 1100px;
+   height: 250px;
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   background: #ffffff;
+   margin:0 auto;
+   margin-top: 30px;
+   border-radius: 5px;
+   box-shadow: 0px 0px 50px #e3d5d5;
+}
+
+
+/* meet the team css */
+.profile{
+  width: 180px;
+  height: 180px;
+  margin-left: 15px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.member-name{
+  margin-top: 150px;
+  padding: 0px 15px;
+  text-align: left;
+  font-size: 25px;
+  line-height: 20px;
+}
+
+.status{
+  padding: 0px 20px;
+  text-align: left;
+  line-height: 20px;
+  margin: 0;
+  font-size: larger;
+}
+
+.about{
+  height: 240px;
+  padding:0px 20px;
+}
+
+.footer-images {
+  display: flex; 
+  justify-content:center; /* make sure logos are evenly distributed among the flexbox */
+  align-items: center; 
+  margin-right: 10px; 
+}
+
+.footer-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(200deg, #4367af, #7ea0e3);
+  margin: 0 auto;
+  padding:10px auto;
+}
+
+.footer-images img {
+  margin: 20px; /* add margin between each image for clear visualization*/
+}
+
+.footer-nsf img {
+  margin:10px;
+}
+
+.disclaimer{
+  flex-wrap: wrap;
+  color: #fff;
+  padding:0px 25px;
+  align-items: center;
+  max-width: 30%;
+  text-align: justify;
+
+}
+
+.profile-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-image{
+  width: 120px;
+  height: 120px;
+  background: #666;
+  margin: 2px 50px;
+  border-radius: 50%;
+  border: 3px solid blanchedalmond;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-image:hover{
+  border: 3px solid #ec8e71;
+}

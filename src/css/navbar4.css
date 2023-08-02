@@ -1,0 +1,141 @@
+*{
+    /* initialize homepage & clear padding & margin */
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /*make navbar to fit the entire screen no matter screen size*/
+    min-width: 1200px;
+}
+
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+.nbar{
+    min-width: 1200px;
+    width:100%;
+    height: 45px;
+    background-color: #ffab90;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    color:beige;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.nbar .na{
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+}
+
+.nbar .na ul{
+    /* relative position */
+    position: relative;
+    display: flex;
+    /* element evenly distribute */
+    justify-content: space-around;
+    width:100%;
+    height:100%;
+}
+
+.nbar .na ul > li{
+    width:100%;
+    height:100%;
+}
+
+.nbar .na ul > li > a{
+    /* need to alter a element to block element before set its height and width */
+    display:block;
+    width:100%;
+    height:100%;
+    line-height: 45px;
+    text-align: center;
+    color:white;
+}
+
+.nbar .na ul > li ol{
+    width:100%;
+    background-color: #f0cccc;
+    /* box-shadow:1px 1px 3px rgba(0, 0, 0, 0.2); */
+    /* dropdown menu shrink to 0 on y axis */
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition: all 0.4s;
+}
+
+.nbar .na ul > li ol li{
+    height: 45px;
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+
+.nbar .na ul > li ol li a{
+    display:block;
+    width:100%;
+    height:100%;
+    line-height: 45px;
+    text-align: center;
+    color:white;
+}
+
+.nbar .na ul > li ol li:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.nbar .na ul > li:hover ol{
+    transform: scaleY(1);
+}
+
+.nbar .na ul .underline{
+    position: absolute;
+    bottom: 0;
+    left: 600px;
+    width: 200px;
+    height: 4px;
+    /* set the underline of each tab*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #95ae81;
+    /* add transition */
+    transition: all 0.5s;
+    pointer-events: none;
+} 
+
+.nbar .na ul > li:nth-child(1):hover ~.underline{
+    left: 0px;
+    background-color: #95ae81;
+}
+
+.nbar .na ul > li:nth-child(3):hover ~.underline{
+    left: 400px;
+    background-color: #95ae81;
+}
+
+.nbar .na ul > li:nth-child(2):hover ~.underline{
+    left: 200px;
+    background-color: #95ae81;
+}
+
+.nbar .na ul > li:nth-child(5):hover ~.underline{
+    left: 800px;
+    background-color: #95ae81;
+}
+
+.nbar .na ul > li:nth-child(6):hover ~.underline{
+    left: 1000px;
+    background-color: #95ae81;
+}
+
+@media (max-width: 1200px) {
+    .nbar .na {
+        flex-wrap:wrap;
+        justify-content: space-between;
+    }
+  }

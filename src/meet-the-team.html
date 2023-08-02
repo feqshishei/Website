@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <!-- this below content appear when we search the website on a search engine -->
+    <meta name="description" content="..." />
+    <meta name="keywords" content="..." />
+    <title>Mobile Design Studios [MODS]</title>
+    <!-- link to the css stylesheet for the website -->
+    <link rel="stylesheet" type="text/css" href="css/banner.css" />
+    <link rel="stylesheet" type="text/css" href="css/team.css" />
+    <link rel="stylesheet" type="text/css" href="css/navbar5.css" />
+    <!-- add a website icon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- add font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/14a55960af.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-content">
+      <div class="header-text">
+        <h1><b>Mobile Design Studios - MODS</b></h1>
+        <h2 class="biggerfont">
+          Supporting Secondary Students Earth Science Knowledge and Engineering
+          Design Skills with Mobile Design Studios
+        </h2>
+      </div>
+      <div class="header-right">
+        <img src="images/sticky-note.jpg" class="header-image" />
+        <div class="image-caption">Upcoming Conference:</div>
+      </div>
+    </div>
+    <div class="nbar">
+      <div class="na">
+        <ul>
+          <li data-nav="home">
+            <a href="index.html">Home</a>
+          </li>
+          <li data-nav="curriculum">
+            <a href="curriculum.html">Curriculum</a>
+            <ol>
+              <li>
+                <a href="overview.html">Overview</a>
+              </li>
+              <li>
+                <a href="design-problems.html">Design Problems</a>
+              </li>
+              <li>
+                <a href="clue.html">CLUE</a>
+              </li>
+            </ol>
+          </li>
+          <li data-nav="resources">
+            <a href="resources.html">Teacher Resources</a>
+            <ol>
+              <li>
+                <a href="teachers-guide.html">Teacher's Guide</a>
+              </li>
+              <li>
+                <a href="tutorial.html">Video Tutorials</a>
+              </li>
+            </ol>
+          </li>
+          <li data-nav="research">
+            <a href="research.html">Research</a>
+            <ol>
+              <li>
+                <a href="ideas-behind.html">Ideas Behind</a>
+              </li>
+              <li>
+                <a href="published-papers.html">Published Papers</a>
+              </li>
+              <li>
+                <a href="past-conferences.html">Past Conferences</a>
+              </li>
+            </ol>
+          </li>
+          <li data-nav="meet-the-team">
+            <a href="meet-the-team.html">Meet the Team</a>
+          </li>
+          <li data-nav="Contact">
+            <a href="contact.html">Contact Us</a>
+          </li>
+          <!-- underline element are used to define sliding segments -->
+          <li class="underline"></li>
+        </ul>
+      </div>
+    </div>
+    <div style="height: 120px"></div>
+    <div class="team-page">
+      <div class="team-wrapper team-wrapper-first">
+        <h2>Meet The Team</h2>
+        <hr />
+        <div class="members">
+          <div class="team-mem" onclick="fetch_info(0)">
+            <img src="images/corey-schimpf.jpg" />
+            <h4>Corey Schimpf</h4>
+            <p>Principal Investigator</p>
+          </div>
+          <div class="team-mem" onclick="fetch_info(1)">
+            <img src="images/defult.png" />
+            <h4>Shanna Daly</h4>
+            <p>Co-Principal Investigator</p>
+          </div>
+          <div class="team-mem" onclick="fetch_info(2)">
+            <img src="images/defult.png" />
+            <h4>Leslie Bondaryk</h4>
+            <p>Technical Lead</p>
+          </div>
+          <div class="team-mem" onclick="fetch_info(3)">
+            <img src="images/feq.jpg" />
+            <h4>Annie Fan</h4>
+            <p>Research Assistant</p>
+          </div>
+          <div class="team-mem" onclick="fetch_info(4)">
+            <img src="images/defult.png" />
+            <h4>Stephanie Harmon</h4>
+            <p>Curriculum Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-container">
+        <img class="profile" id="profile" src="images/corey-schimpf.jpg" />
+        <div class="teaminfo">
+          <h1 class="member-name" id="name">Corey Schimpf</h1>
+          <h3 class="status" id="status">
+            Principal Investigator - University at Buffalo
+          </h3>
+          <p class="about" id="about">
+            Corey Schimpf is the Principal Investigator (PI) for the project. He
+            oversees the curriculum and technology development and co-leads the
+            research design with the team. He is an Assistant Professor of
+            Engineering Education at the University at Buffalo. He has research
+            interests in design thinking, human-centered design and developing
+            scaffolding tools for supporting learning in complex domains.
+          </p>
+        </div>
+      </div>
+      <div class="team-wrapper team-wrapper-second">
+        <div class="members">
+          <div class="team-mem" onclick="fetch_info(5)">
+            <img src="images/defult.png" />
+            <h4>Carolyn Giroux</h4>
+            <p>Curriculum Developer</p>
+          </div>
+          <div class="team-mem" onclick="fetch_info(6)">
+            <img src="images/defult.png" />
+            <h4>Jacquie Handley</h4>
+            <p>PD Developer</p>
+          </div>
+          <div class="team-mem" onclick="fetch_info(7)">
+            <img src="images/defult.png" />
+            <h4>Some Name</h4>
+            <p>Some Position</p>
+          </div>
+          <div class="team-mem" onclick="fetch_info(8)">
+            <img src="images/defult.png" />
+            <h4>Another Name</h4>
+            <p>Another Position</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function fetch_info(i) {
+        let profile = [
+          "images/corey-schimpf.jpg",
+          "images/defult.png",
+          "images/defult.png",
+          "images/feq.jpg",
+          "images/defult.png",
+          "images/defult.png",
+          "images/defult.png",
+          "images/defult.png",
+          "images/defult.png",
+        ];
+        let name = [
+          "Corey Schimpf",
+          "Shanna Daly",
+          "Leslie Bondaryk",
+          "Annie Fan",
+          "Stephanie Harmon",
+          "Carolyn Giroux",
+          "Jacquie Handley",
+          "Some Name",
+          "Another Name",
+        ];
+        let status = [
+          "Principal Investigator - University at Buffalo",
+          "Co-Principal Investigator - University of Michigan",
+          "Technical Lead - Concord Consortium",
+          "Research Assistant - University at Buffalo",
+          "Curriculum Developer - Concord Consortium",
+          "Curriculum Developer - University of Michigan",
+          "PD Developer - Purdue University",
+          "Some Position",
+          "Another Position",
+        ];
+        document.getElementById("profile").src = profile[i];
+        document.getElementById("name").innerHTML = name[i];
+        document.getElementById("status").innerHTML = status[i];
+        document.getElementById("about").innerHTML =
+          name[i] +
+          " " +
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+      }
+    </script>
+    <div class="footer-logo">
+      <!-- create a flex box to contain the 3 logo images -->
+      <div class="footer-images">
+        <a href="https://www.buffalo.edu/" target="_blank">
+          <img
+            src="images/UB_Secondary.png"
+            alt="University at Buffalo logo"
+            width="200"
+        /></a>
+        <a href="https://umich.edu/" target="_blank">
+          <img
+            src="images/umich-logo.jpg"
+            alt="University of Michigan logo"
+            width="90"
+        /></a>
+        <a href="https://concord.org/">
+          <img
+            src="images/concord-logo.png"
+            alt="Concord Consortium logo"
+            width="150"
+        /></a>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-nsf">
+        <a href="https://www.nsf.gov/" target="_blank">
+          <img src="images/nsf-logo.png" alt="NSF logo" width="100" />
+        </a>
+      </div>
+      <div class="disclaimer">
+        <p>
+          This material is based upon work supported by the National Science
+          Foundation under Grant No.2201215. Any opinions, findings, and
+          conclusions or recommendations expressed in this material are those of
+          the author(s) and do not necessarily reflect the views of the National
+          Science Foundation.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
