@@ -2,7 +2,19 @@
     <a href="https://www.flaticon.com/free-icons/ecosystem" title="ecosystem icons">Ecosystem icons created by Chattapat - Flaticon</a>
 
 2. mailchimp-> 1. email back/newsletter
-3. change the background of the contact us form to white
-4. reference contact picture <a href="https://storyset.com/internet">Internet illustrations by Storyset</a>
-5. checkbox now does nothing, need to verify
-6. what does pd dev mean?
+3. reference contact picture <a href="https://storyset.com/internet">Internet illustrations by Storyset</a>
+4. checkbox for contact does nothing, need to fix js (part of no.2 problem)
+5. what does pd dev mean? & collect everyone's intro + fix the lorem intro (js script)
+6. pagination does nothing, one page need to have only 5 info-container (rn 8)
+
+
+A website dedicated to introducing the project to the general public was developed using HTML, CSS, and JavaScript. 
+The site encompasses key components including a broad overview of the project, a detailed introduction of the curriculum, 
+resources designed to assist teachers in the classroom, features of related research papers and conference presentations, 
+introductions to the team members, and a user-friendly contact form. The development process emphasized a coherent 
+design that aligns seamlessly with the project's core values and objectives.
+
+
+Have two different backgrounds for poster & presentations
+
+load everthing, and unrolling,go down until class spend their time 

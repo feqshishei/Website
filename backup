@@ -1,0 +1,212 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Enqiao (Annie) Fan} \\ \vspace{1pt}
+    \small 925-413-7015 $|$ \href{mailto:x@x.com}{\underline{enqiaofa@buffalo.edu}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
+    {\small{Bay Area, CA / Buffalo, NY}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University at Buffalo}{Buffalo, NY}
+      {Bachelor of Science in Computer Engineering}{Aug. 2020 -- May 2024}
+    % \resumeSubheading
+    %   {Blinn College}{Bryan, TX}
+    %   {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
+  \resumeSubHeadingListEnd
+
+
+%----------- WORK EXPERIENCE-----------
+\section{Relevant Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Front-End Developer}{June 2023 -- Present}
+      {University at Buffalo}{Buffalo, NY}
+      \resumeItemListStart
+        \resumeItem{Developed a UI/UX friendly website using FastAPI and PostgreSQL to store data from learning management systems}
+        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant}{Oct. 2022 -- Present}
+      {University at Buffalo}{Buffalo, NY}
+      \resumeItemListStart
+        \resumeItem{Communicate with managers to set up campus computers used on campus}
+        \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Technical Product Development Intern}{May 2022 -- Aug. 2022}
+      {Quantum Compliance}{Plymouth, MI}
+      \resumeItemListStart
+        \resumeItem{Explored methods to generate video game dungeons based off of \emph{The Legend of Zelda}}
+        \resumeItem{Developed a game in Java to test the generated dungeons}
+        \resumeItem{Contributed 50K+ lines of code to an established codebase via Git}
+        \resumeItem{Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable}
+        \resumeItem{Wrote an 8-page paper and gave multiple presentations on-campus}
+        \resumeItem{Presented virtually to the World Conference on Computational Intelligence}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Single-Cycle 8-Bit Processor} $|$ \emph{Verilog, Xilinx Vivado, FPGA, Git}}{Mar. 2023 -- Apr. 2023}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a team of four, leading and setting up regular meetings to ensure alignment with the development timeline, fostering effective teamwork and successful project execution}
+            \resumeItem{Boosted processing efficiency by 10\% with successful FPGA deployments through leading design and integration using Verilog and Vivado, and guiding the team through simulation and synthesis phases}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Atari Breakout} $|$ \emph{ARM Assembly, UART, GPIO, PuTTy, Git}}{Apr. 2023 -- May 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+ %-----------Extracurricular-----------   
+\section{Additional Experiences}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Teaching Assistant} $|$ \emph{Computer Science I -- University at Buffalo}}{Aug 2023 -- Present}
+      \resumeItemListStart
+        \resumeItem{Reduced the time required for students to complete assignments by 30\% through collaboration with faculty to analyze unique learning needs, implementing solution-oriented, results-driven educational approaches}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+          {\textbf{Academic Tutor \& Mentor} $|$ \emph{Upward Bound Program -- Buffalo, NY}}{Oct. 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Mentored a diverse group of high school students, contributing to an average 20\% improvement in academic performance, with over 80\% of participants subsequently pursuing higher education}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills \& Interests}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming}{: Python, C, JavaScript, HTML/CSS, Assembly, Scala, Verilog/System Verilog} \\
+     \textbf{Certificate}{: pandas, NumPy, Matplotlib}
+    }} \\
+    \textbf{Software \& Tools}{: Git, Firebase, Jira, Confluence, Axure, Sketch, Figma, Tableau, Agile \& Scrum methodologies} \\
+    \textbf{Languages}{: English [Fluent], Mandarin [Native], French [Conversational]} \\
+    \textbf{Interests}{: Accordion, Cosplay, Carving Eraser Stamps, K-POP Dancing, MOBA \& Tower Defense Game Enthusiast} \\
+ \end{itemize}
+%-------------------------------------------
+\end{document}

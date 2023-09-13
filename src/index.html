@@ -1,24 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML, CSS" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
     <!-- this below content appear when we search the website on a search engine -->
     <meta name="description" content="..." />
-    <meta name="keywords" content="..." />
+    <meta
+      name="keywords"
+      content="next generation science standards, engineering design, earth science, curriculum, project-based learning, AI agents, collaboration"
+    />
     <title>Mobile Design Studios [MODS]</title>
-    <!-- link to the css stylesheet for the website -->
-    <link rel="stylesheet" type="text/css" href="css/banner.css" />
-    <link rel="stylesheet" type="text/css" href="css/navbar1.css" />
-    <link rel="stylesheet" type="text/css" href="css/card.css" />
+    <!-- import icons/css -->
+    <link rel="stylesheet" type="text/css" href="./CSS/banner.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/navbar1.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/card.css" />
+    <link rel="stylesheet" type="text/css" href="./ico/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/pacman.css" />
+    <link rel="stylesheet" type="text/css" href="./CSS/quote.css" />
     <!-- add a website icon -->
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <!-- add font awesome kit -->
     <script
       src="https://kit.fontawesome.com/14a55960af.js"
       crossorigin="anonymous"
     ></script>
+    <!-- import vue grammar -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   </head>
   <body>
     <div class="header-content">
@@ -29,9 +39,47 @@
           Design Skills with Mobile Design Studios
         </h2>
       </div>
-      <div class="header-right">
-        <img src="images/sticky-note.jpg" class="header-image" />
+      <!-- <div class="header-right">
+        <img src="./images/sticky-note.jpg" class="header-image" />
         <div class="image-caption">Upcoming Conference:</div>
+      </div> -->
+      <div class="banner-carousel">
+        <div class="header-right">
+          <input type="radio" name="btn" id="btn1" checked />
+          <input type="radio" name="btn" id="btn2" />
+          <input type="radio" name="btn" id="btn3" />
+          <input type="radio" name="btn" id="btn4" />
+          <input type="radio" name="btn" id="btn5" />
+          <!-- 怎么把这些点统一往左挪一点 -->
+          <label for="btn1"></label>
+          <label for="btn2"></label>
+          <label for="btn3"></label>
+          <label for="btn4"></label>
+          <label for="btn5"></label>
+          <ul>
+            <li>
+              <img src="./images/sticky-note.jpg" alt="" />
+              <!-- 想让他们保持在同一开始位置上 得微调每个caption -->
+              <div class="caption">Caption 1</div>
+            </li>
+            <li>
+              <img src="./images/sticky-note.jpg" alt="" />
+              <div class="caption">Caption 2</div>
+            </li>
+            <li>
+              <img src="./images/sticky-note.jpg" alt="" />
+              <div class="caption">Caption 3</div>
+            </li>
+            <li>
+              <img src="./images/sticky-note.jpg" alt="" />
+              <div class="caption">Caption 4</div>
+            </li>
+            <li>
+              <img src="./images/sticky-note.jpg" alt="" />
+              <div class="caption">Caption 5</div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="nbar">
@@ -50,7 +98,7 @@
                 <a href="design-problems.html">Design Problems</a>
               </li>
               <li>
-                <a href="clue.html">CLUE</a>
+                <a href="mods.html">MODS</a>
               </li>
             </ol>
           </li>
@@ -90,7 +138,87 @@
         </ul>
       </div>
     </div>
+    <div class="introwrap">
+      <div class="pacwrap">
+        <div
+          class="container"
+          id="app"
+          @mouseover="stopAutoPlay"
+          @mouseout="startAutoPlay"
+        >
+          <div class="img-box">
+            <img :src="item.image" alt="" v-for="item in list" />
+          </div>
+          <div class="bottom-box" :style="{'--b-color':list[0].bottom_color}">
+            <div class="l-box">
+              <div class="title">{{list[active_index].title}}</div>
+              <ul class="dots">
+                <li
+                  :class="[index==active_index?'pacman':'dot',is_prev?'l':'']"
+                  v-for="(item,index) in list"
+                  @click="changeBanner(index)"
+                >
+                  <!-- pacman -->
+                  <div v-if="index==active_index"></div>
+                  <div v-if="index==active_index"></div>
+                </li>
+              </ul>
+            </div>
+            <div class="r-box">
+              <span
+                class="iconfont icon-zuojiantou"
+                @click="changeBanner(-1,true)"
+              ></span>
+              <span
+                class="iconfont icon-youjiantou"
+                @click="changeBanner(-1,false)"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="introtext">
+        <h2>Welcome to the Mobile Design Studio Project!</h2>
+        <hr />
+        <p>
+          This is a National Science Foundation Discovery Research K-12 (<a
+            href="https://cadrek12.org"
+            ><b>DRK12</b></a
+          >
+          ) grant lead by University at Buffalo with collaborators at University
+          of Michigan and the Concord Consortium.
+        </p>
+        <p>
+          MODS focuses on
+          <a href="design-problems.html"><b>front-end engineering design</b></a>
+          challenges that are integrated with
+          <a href="design-problems.html"><b>Earth Science</b></a>
+          topics using an innovative NGSS-aligned curriculum, collaborative
+          web-based software with an embedded
+          <a href="mods.html"><b>AI design mentor</b></a>
+          to support students.
+        </p>
+        <p>
+          The project targets student outcomes including
+          <!-- this goes to published papers -->
+          <!-- hover effect -->
+          <a href="published-papers.html"
+            ><b
+              >design thinking, socio-scientific thinking, engineering and
+              science integration</b
+            ></a
+          >
+          to prepare students for complex future problems they will face. This
+          site is intended for researchers and teachers interested in K-12
+          engineering design, Earth and environmental science.
+        </p>
+      </div>
+    </div>
+    <div class="subheading">
+      <h1 data-text="Our Project">Our Project</h1>
+    </div>
     <div class="card-page">
+      <!-- put tag for "our project" -->
       <div class="card">
         <div class="card-content">
           <h2 class="card-title">Curriculum</h2>
@@ -132,26 +260,45 @@
         </div>
       </div>
     </div>
-    <div style="height: 400px"></div>
-    <!-- create a 800px height white space for place holder -->
+    <div class="subheading">
+      <div class="second">
+        <h1 data-text="teacher feedback">teacher feedback</h1>
+      </div>
+    </div>
+    <div class="quotewrap">
+      <blockquote>
+        <!-- shift logic pic&quotes w/5 -->
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus optio
+        veniam explicabo eligendi est earum quas totam, debitis nemo omnis qui
+        voluptate voluptates magni tenetur ea ratione. Eveniet, laudantium
+        nesciunt?
+        <cite>
+          Some Teacher Name<br />
+          <em>Some Highschool Science Teacher</em>
+        </cite>
+      </blockquote>
+      <img src="./images/random5.jpg" alt="" />
+    </div>
+
+    <div style="height: 80px"></div>
     <div class="footer-logo">
       <!-- create a flex box to contain the 3 logo images -->
       <div class="footer-images">
         <a href="https://www.buffalo.edu/" target="_blank">
           <img
-            src="images/UB_Secondary.png"
+            src="./images/UB_Secondary.png"
             alt="University at Buffalo logo"
             width="200"
         /></a>
         <a href="https://umich.edu/" target="_blank">
           <img
-            src="images/umich-logo.jpg"
+            src="./images/umich-logo.jpg"
             alt="University of Michigan logo"
             width="90"
         /></a>
         <a href="https://concord.org/">
           <img
-            src="images/concord-logo.png"
+            src="./images/concord-logo.png"
             alt="Concord Consortium logo"
             width="150"
         /></a>
@@ -160,7 +307,7 @@
     <div class="footer-container">
       <div class="footer-nsf">
         <a href="https://www.nsf.gov/" target="_blank">
-          <img src="images/nsf-logo.png" alt="NSF logo" width="100" />
+          <img src="./images/nsf-logo.png" alt="NSF logo" width="100" />
         </a>
       </div>
       <div class="disclaimer">
@@ -175,3 +322,4 @@
     </div>
   </body>
 </html>
+<script src="./JS/pacman.js"></script>

@@ -1,0 +1,252 @@
+#items .item {
+    margin-bottom: 0.5em;
+}
+
+.filter h2 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    margin-bottom: 23px;
+}
+
+hr{
+    width:100px;
+    border-top: 3px solid #84a88e;
+    font-weight: 100;
+    margin-top: -13px;
+    margin-left: 26px;
+}
+
+.filter {
+    margin-bottom: 1em;
+    color: #414554;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    padding-left: 200px;
+    justify-content: center;
+    width: 90%;
+    max-width: 230px;
+}
+
+.filter button{
+    padding:13px;
+    background:#84a88e;
+    color:#fff;
+    font-size:16px;
+    border:0;
+    outline:none;
+    cursor:pointer;
+    width: 120px;
+    margin:15px auto 0;
+    margin-left: 0px;
+    border-radius: 30px;
+    align-items: left;
+}
+
+.filter .filter-selection{
+    margin-top: 25px;
+}
+
+.checkbox-wrapper {
+    display: flex;  
+    align-items: center; 
+    padding-bottom:18px;
+}
+
+/* hide the original checkbox */
+.checkbox-wrapper .custom-checkbox input {
+    display: none;
+}
+
+/* create the customize checkbox */
+.checkbox-wrapper .custom-checkbox .checkmark {
+    display: inline-block;
+    width: 17.5px;
+    height: 17.5px;
+    background: white;
+    border-radius: 3px;
+    border: 2px solid #62948b;
+    position: relative;
+    margin-right: 7.5px;
+    cursor:pointer;
+}
+  
+.checkbox-wrapper .custom-checkbox .checkmark:hover{
+    background-image: linear-gradient(#dddddd, #dddddd);
+}
+
+  /* define the checkbox fill when it's been checked*/
+.checkbox-wrapper .custom-checkbox input:checked ~ .checkmark {
+    background: #62948b;
+}
+  
+  /* create the "checkmark' symbol after it's been selected */
+.checkbox-wrapper .custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.checkbox-wrapper .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+/* color, position of the checkmark */
+.checkbox-wrapper .custom-checkbox .checkmark:after {
+    left: 5px;
+    top: 1.7px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+  
+.checkbox-wrapper .custom-checkbox {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    margin-left: 460px;
+    justify-content: space-between; 
+    margin-top: 70px;
+    margin-bottom: 35px;
+    flex: 3;
+}
+  
+.rblock {
+    flex: 1 0 30%; /* flex-grow, flex-shrink, flex-basis */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    margin-bottom: 10px;
+    margin-right:100px;
+    padding: 20px;
+    max-width: 430px;
+    box-sizing: border-box; 
+    border-radius: 10px;
+    background-image: linear-gradient(#eff7f7, #eff7f7);
+    font-family: "Poppins", sans-serif;
+    color:#373a49;
+}
+
+.rblock h2{
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+  
+.rblock h2 a {
+    text-decoration: none;
+    color: #84a88e;
+    font-size: 20px;
+    text-align: center;
+}
+
+.rblock h2 a:hover{
+    text-decoration: underline;
+    color: #688471;
+}
+  
+.rblock p {
+    font-size:15px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    color: #4a4a4a;
+    text-align: center; 
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 300;
+}
+  
+.rblock img {
+    max-width: 100%;
+    height:247.5px;
+    width: 330px;
+    margin-left:-10px;
+    border-radius: 2px;
+}
+
+.page{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    padding:0;
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: #383838;
+    padding: 10px 40px;
+    border-radius: 6px;
+    margin-left:215px;
+}
+
+.pagination ul {
+    margin: 10px 20px;
+}
+
+.pagination ul li{
+    display: inline-block;
+    margin: 0 7px;
+    background: hsl(0, 0%, 100%);
+    width: 30px;
+    height: 30px;
+    border-radius: 6.5px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 31px;
+    border: 2px solid #dddddd;
+    cursor: pointer;
+}
+
+.pagination ul li:hover{
+    background-image: linear-gradient(#dddddd, #dddddd);
+}
+
+.btn1:hover, .btn2:hover{
+    background-image: linear-gradient(#dddddd, #dddddd);
+}
+
+.pagination ul li.active {
+    color: #fff;
+    background-image: linear-gradient(#7ea0e3, #7ea0e3);
+    background-repeat: no-repeat;
+    border:none;
+}
+
+.btn1, .btn2 {
+    display: inline-block;
+    align-items: center;
+    font-size: 17px;
+    padding: 5px;
+    font-weight: 500;
+    color: #383838;
+    background: transparent;
+    outline:#25272f;
+    border-radius: 5px;
+}
+
+.btn1 img{
+    width: 24px;
+    transform: rotate(180deg);
+}
+
+.btn2 img{
+    width: 24px;
+    margin-left: 5.3px;
+}
+  
+.content-container {
+    flex: 1; 
+    margin-top: -400px;
+    margin-bottom:-90px;
+}

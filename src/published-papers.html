@@ -11,6 +11,7 @@
     <!-- link to the css stylesheet for the website -->
     <link rel="stylesheet" type="text/css" href="css/banner.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar4.css" />
+    <link rel="stylesheet" type="text/css" href="css/filter.css" />
     <!-- add a website icon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- add font awesome kit -->
@@ -49,7 +50,7 @@
                 <a href="design-problems.html">Design Problems</a>
               </li>
               <li>
-                <a href="clue.html">CLUE</a>
+                <a href="mods.html">MODS</a>
               </li>
             </ol>
           </li>
@@ -89,8 +90,323 @@
         </ul>
       </div>
     </div>
-    <div style="height: 1000px"></div>
-    <!-- create a 1000px height white space for place holder -->
+    <!-- <div style="height: 1000px"></div> -->
+    <div class="filter">
+      <h2>Content Type:</h2>
+      <hr />
+      <div class="filter-selection">
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="bookchapters" class="checkbox" />
+            <span class="checkmark"></span>
+            Book Chapters
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="conference" class="checkbox" />
+            <span class="checkmark"></span>
+            Conference Proceedings
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="theses" class="checkbox" />
+            <span class="checkmark"></span>
+            Dissertations / Theses
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="articles" class="checkbox" />
+            <span class="checkmark"></span>
+            Journal Articles
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="newsletter" class="checkbox" />
+            <span class="checkmark"></span>
+            Newsletter
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="reviews" class="checkbox" />
+            <span class="checkmark"></span>
+            Reviews
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="web" class="checkbox" />
+            <span class="checkmark"></span>
+            Web Resources
+          </label>
+        </div>
+      </div>
+      <button id="filter-btn">Apply Filter</button>
+    </div>
+    <div class="paper-page">
+      <div class="info-container" id="articles-info">
+        <img class="profile" id="profile" src="images/duck.jpg" />
+        <div class="paperinfo">
+          <a href="http://google.com">
+            <h2 class="member-name" id="name">
+              Reflections on the use of complexityappropriate computational
+              modeling for public policy evaluation in the UK. [Article]
+            </h2></a
+          >
+          <div class="author">
+            <h3 class="status" id="status">
+              Barbrook-Johnson, P., Schimpf, C. & Castellani, B.
+            </h3>
+            <h3 class="status" id="status">
+              Journal on Policy and Complex Systems [2019] 5 (1). pp. 55-70
+            </h3>
+          </div>
+          <p class="about" id="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            autem tenetur velit, dignissimos voluptate nesciunt itaque minima.
+          </p>
+        </div>
+      </div>
+      <div class="info-container" id="newsletter-info">
+        <img class="profile" id="profile" src="images/duck.jpg" />
+        <div class="paperinfo">
+          <h2 class="member-name" id="name">
+            Reflections on the use of complexityappropriate computational
+            modeling for public policy evaluation in the UK. [Newsletter]
+          </h2>
+          <div class="author">
+            <h3 class="status" id="status">
+              Barbrook-Johnson, P., Schimpf, C. & Castellani, B.
+            </h3>
+            <h3 class="status" id="status">
+              Journal on Policy and Complex Systems [2019] 5 (1). pp. 55-70
+            </h3>
+          </div>
+          <p class="about" id="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            autem tenetur velit, dignissimos voluptate nesciunt itaque minima.
+          </p>
+        </div>
+      </div>
+      <div class="info-container" id="reviews-info">
+        <img class="profile" id="profile" src="images/duck.jpg" />
+        <div class="paperinfo">
+          <h2 class="member-name" id="name">
+            Reflections on the use of complexityappropriate computational
+            modeling for public policy evaluation in the UK. [Reviews]
+          </h2>
+          <div class="author">
+            <h3 class="status" id="status">
+              Barbrook-Johnson, P., Schimpf, C. & Castellani, B.
+            </h3>
+            <h3 class="status" id="status">
+              Journal on Policy and Complex Systems [2019] 5 (1). pp. 55-70
+            </h3>
+          </div>
+          <p class="about" id="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            autem tenetur velit, dignissimos voluptate nesciunt itaque minima.
+          </p>
+        </div>
+      </div>
+      <div class="info-container" id="web-info">
+        <img class="profile" id="profile" src="images/duck.jpg" />
+        <div class="paperinfo">
+          <h2 class="member-name" id="name">
+            Reflections on the use of complexityappropriate computational
+            modeling for public policy evaluation in the UK. [Web Resources]
+          </h2>
+          <div class="author">
+            <h3 class="status" id="status">
+              Barbrook-Johnson, P., Schimpf, C. & Castellani, B.
+            </h3>
+            <h3 class="status" id="status">
+              Journal on Policy and Complex Systems [2019] 5 (1). pp. 55-70
+            </h3>
+          </div>
+          <p class="about" id="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            autem tenetur velit, dignissimos voluptate nesciunt itaque minima.
+          </p>
+        </div>
+      </div>
+      <div class="info-container" id="book-chapters-info">
+        <img class="profile" id="profile" src="images/duck.jpg" />
+        <div class="paperinfo">
+          <h2 class="member-name" id="name">
+            Reflections on the use of complexityappropriate computational
+            modeling for public policy evaluation in the UK. [Book Chapters]
+          </h2>
+          <div class="author">
+            <h3 class="status" id="status">
+              Barbrook-Johnson, P., Schimpf, C. & Castellani, B.
+            </h3>
+            <h3 class="status" id="status">
+              Journal on Policy and Complex Systems [2019] 5 (1). pp. 55-70
+            </h3>
+          </div>
+          <p class="about" id="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            autem tenetur velit, dignissimos voluptate nesciunt itaque minima.
+          </p>
+        </div>
+      </div>
+      <div class="info-container" id="conference-info">
+        <img class="profile" id="profile" src="images/duck.jpg" />
+        <div class="paperinfo">
+          <h2 class="member-name" id="name">
+            Reflections on the use of complexityappropriate computational
+            modeling for public policy evaluation in the UK. [Conference
+            Proceedings]
+          </h2>
+          <div class="author">
+            <h3 class="status" id="status">
+              Barbrook-Johnson, P., Schimpf, C. & Castellani, B.
+            </h3>
+            <h3 class="status" id="status">
+              Journal on Policy and Complex Systems [2019] 5 (1). pp. 55-70
+            </h3>
+          </div>
+          <p class="about" id="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            autem tenetur velit, dignissimos voluptate nesciunt itaque minima.
+          </p>
+        </div>
+      </div>
+      <div class="info-container" id="theses-info">
+        <img class="profile" id="profile" src="images/duck.jpg" />
+        <div class="paperinfo">
+          <h2 class="member-name" id="name">
+            Reflections on the use of complexityappropriate computational
+            modeling for public policy evaluation in the UK. [Dissertations /
+            Theses]
+          </h2>
+          <div class="author">
+            <h3 class="status" id="status">
+              Barbrook-Johnson, P., Schimpf, C. & Castellani, B.
+            </h3>
+            <h3 class="status" id="status">
+              Journal on Policy and Complex Systems [2019] 5 (1). pp. 55-70
+            </h3>
+          </div>
+          <p class="about" id="about">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            autem tenetur velit, dignissimos voluptate nesciunt itaque minima.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <div class="pagination">
+        <button class="btn1" onclick="backBtn()">
+          <img src="images/arrow.png" /> prev
+        </button>
+        <ul>
+          <li class="link active" value="1" onclick="activeLink()">1</li>
+          <li class="link" value="2" onclick="activeLink()">2</li>
+        </ul>
+        <button class="btn2" onclick="nextBtn()">
+          next<img src="images/arrow.png" />
+        </button>
+      </div>
+    </div>
+    <div style="height: 70px"></div>
+    <script>
+      let link = document.getElementsByClassName("link");
+      let currentValue = 1;
+
+      function activeLink() {
+        for (l of link) {
+          l.classList.remove("active");
+        }
+        event.target.classList.add("active");
+        currentValue = event.target.value;
+      }
+
+      function backBtn() {
+        if (currentValue > 1) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue--;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+
+      function nextBtn() {
+        if (currentValue < 2) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue++;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+    </script>
+    <script>
+      let checkboxes = document.querySelectorAll("input[type=checkbox]");
+      let button = document.getElementById("filter-btn");
+
+      var checkboxToInfoMap = {
+        articles: "articles-info",
+        bookchapters: "book-chapters-info",
+        theses: "theses-info",
+        conference: "conference-info",
+        reviews: "reviews-info",
+        web: "web-info",
+        newsletter: "newsletter-info",
+      };
+
+      // when page loading shows everything by defult
+      checkboxes.forEach(function (checkbox) {
+        let infoContainer = document.getElementById(
+          checkboxToInfoMap[checkbox.id]
+        );
+        infoContainer.style.display = "flex";
+      });
+
+      button.addEventListener("click", function () {
+        // 隐藏所有内容
+        checkboxes.forEach(function (checkbox) {
+          let infoContainer = document.getElementById(
+            checkboxToInfoMap[checkbox.id]
+          );
+          infoContainer.style.display = "none";
+        });
+
+        // 创建一个容器，用于保存选中的元素
+        let selectedContainers = [];
+
+        // 检查是否有任何复选框被选中，并保存选中的元素
+        checkboxes.forEach(function (checkbox) {
+          if (checkbox.checked) {
+            let infoContainer = document.getElementById(
+              checkboxToInfoMap[checkbox.id]
+            );
+            selectedContainers.push(infoContainer);
+          }
+        });
+
+        // 如果有复选框被选中，则只显示选中的内容
+        if (selectedContainers.length) {
+          selectedContainers.forEach(function (container) {
+            container.style.display = "flex";
+          });
+        } else {
+          // 如果没有复选框被选中，则显示所有内容
+          checkboxes.forEach(function (checkbox) {
+            let infoContainer = document.getElementById(
+              checkboxToInfoMap[checkbox.id]
+            );
+            infoContainer.style.display = "flex";
+          });
+        }
+      });
+    </script>
     <div class="footer-logo">
       <!-- create a flex box to contain the 3 logo images -->
       <div class="footer-images">

@@ -1,0 +1,147 @@
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.quotewrap { 
+  margin: 10px;
+  margin-top: 20px;
+  padding: 0; 
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 300; 
+  color: #777; 
+  font-size: 15px; 
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+
+/* blockquote styling */
+
+blockquote {
+  display: block;
+  position: relative;
+  width: 37%;
+  margin: 4rem auto;
+  margin-left: 180px;
+  /* margin-top: -5px; */
+  padding: .5rem;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: 'Times', serif;
+  color: #1785b5;
+}
+
+blockquote::before {
+  content: '\201c'; 
+  top: 10px;
+  left: -45px;
+}
+
+blockquote::after {
+  content: '\201d';
+  bottom: -40px;
+}
+
+blockquote::before,
+blockquote::after {
+  font-size: 5.2em;
+  position: absolute;
+}
+
+blockquote cite {
+  display: block;
+  position: absolute;
+  font-size: 1rem;
+  font-style: normal;  
+  line-height: 1.2;
+  color: #888;  
+  top: 120%;
+  padding-left: 70px;
+}
+
+blockquote cite::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.quotewrap img{
+    height: 300px;
+    margin-right: 120px;
+}
+
+
+.introwrap{
+  display: flex;
+}
+
+.introwrap h2{
+  text-align:center;
+  color:#4e5365;
+  font-size: 30px;
+}
+
+.introwrap hr{
+    width:400px;
+    border-top: 3px solid #84a88e;
+    margin:10px auto;
+    margin-bottom: 30px;
+}
+
+.introtext{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  max-width: 45%;
+  margin-left: 80px;
+  margin-top: 45px;
+  color: #373a49;
+  line-height: 1.6; /* increase line height */
+  /* text shadow */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); 
+  letter-spacing: 0.3px; 
+}
+
+.introtext a:hover {
+  color: #84a88e; 
+  text-decoration: underline;
+}
+
+.subheading h1{
+  margin-bottom: 20px;
+  position: relative; 
+  margin-left: 88px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3em;
+  visibility: visible; 
+  text-transform: uppercase;
+  z-index: 1;
+  color: #c1c1c1;
+} 
+
+.subheading h1::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #434343;
+  width: 0%;   
+  overflow: hidden;
+  transition: width 1s;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.subheading h1:hover::before {
+  width: 100%;
+}
+
+.second{
+  margin-top: 25px;
+  margin-bottom: -10px;
+}

@@ -13,19 +13,20 @@
 
 .card-page{
     display: grid;
+    margin-top: -20px;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem; /* Adjust this value to bring the cards closer together */
-    min-height: 100vh;
+    min-height: 60vh;
     place-items: center;
     line-height: 1.6;
     background: white;
     font-family: "Poppins", sans-serif;
-    padding: 0 10%; /* Adjust left and right padding to center the cards on the page */
+    padding: 0 5%; /* Adjust left and right padding to center the cards on the page */
 }
 
 .card {
     color:hsl(0, 0%, 100%);
-    background-image: url(/src/images/random.jpg);
+    background-image: url(../images/random1.jpg);
     background-size: cover;
     padding: 10rem 0 0;
     max-width: 28ch;

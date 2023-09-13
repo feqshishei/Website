@@ -11,6 +11,7 @@
     <!-- link to the css stylesheet for the website -->
     <link rel="stylesheet" type="text/css" href="css/banner.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar4.css" />
+    <link rel="stylesheet" type="text/css" href="css/presentation.css" />
     <!-- add a website icon -->
     <link rel="shortcut icon" href="images/favicon.ico" />
     <!-- add font awesome kit -->
@@ -49,7 +50,7 @@
                 <a href="design-problems.html">Design Problems</a>
               </li>
               <li>
-                <a href="clue.html">CLUE</a>
+                <a href="mods.html">MODS</a>
               </li>
             </ol>
           </li>
@@ -89,8 +90,288 @@
         </ul>
       </div>
     </div>
-    <div style="height: 1000px"></div>
-    <!-- create a 1000px height white space for place holder -->
+    <div class="filter">
+      <h2>Content Type:</h2>
+      <hr />
+      <div class="filter-selection">
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="cs" class="checkbox" />
+            <span class="checkmark"></span>
+            Computer Science
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="designresearch" class="checkbox" />
+            <span class="checkmark"></span>
+            Design Research
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="engedu" class="checkbox" />
+            <span class="checkmark"></span>
+            Engineering Education
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="learnsci" class="checkbox" />
+            <span class="checkmark"></span>
+            Learning Sciences
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="sciedu" class="checkbox" />
+            <span class="checkmark"></span>
+            Science Education
+          </label>
+        </div>
+        <div class="checkbox-wrapper">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="teaching" class="checkbox" />
+            <span class="checkmark"></span>
+            Teaching Conference
+          </label>
+        </div>
+      </div>
+      <button id="filter-btn">Apply Filter</button>
+    </div>
+    <div class="content-container">
+      <div class="flex-container">
+        <div class="rblock" id="eng-edu-info">
+          <p>
+            <a href="../src/presentation/DRK12poster.pdf"
+              ><img
+                decoding="async"
+                src="images/2023DRK12.png"
+                alt="Image of article"
+                width="300"
+            /></a>
+          </p>
+          <h2>
+            <a
+              href="https://www.nsf.gov/pubs/2020/nsf20572/nsf20572.htm"
+              target="_blank"
+              >NSF DRK12 PI Meeting [EE]</a
+            >
+          </h2>
+          <p>Washington D.C. June 28th 2023</p>
+          <p>Presenters: Corey Schimpf</p>
+        </div>
+        <div class="rblock" id="sci-edu-info">
+          <p>
+            <a href="../src/presentation/DRK12poster.pdf"
+              ><img
+                decoding="async"
+                src="images/2023DRK12.png"
+                alt="Image of article"
+                width="300"
+            /></a>
+          </p>
+          <h2>
+            <a
+              href="https://www.nsf.gov/pubs/2020/nsf20572/nsf20572.htm"
+              target="_blank"
+              >NSF DRK12 PI Meeting [SE]</a
+            >
+          </h2>
+          <p>Washington D.C. June 28th 2023</p>
+          <p>Presenters: Corey Schimpf</p>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="rblock" id="learn-sci-info">
+          <p>
+            <a href="../src/presentation/DRK12poster.pdf"
+              ><img
+                decoding="async"
+                src="images/2023DRK12.png"
+                alt="Image of article"
+                width="300"
+            /></a>
+          </p>
+          <h2>
+            <a
+              href="https://www.nsf.gov/pubs/2020/nsf20572/nsf20572.htm"
+              target="_blank"
+              >NSF DRK12 PI Meeting [LS]</a
+            >
+          </h2>
+          <p>Washington D.C. June 28th 2023</p>
+          <p>Presenters: Corey Schimpf</p>
+        </div>
+        <div class="rblock" id="cs-info">
+          <p>
+            <a href="../src/presentation/DRK12poster.pdf"
+              ><img
+                decoding="async"
+                src="images/2023DRK12.png"
+                alt="Image of article"
+                width="300"
+            /></a>
+          </p>
+          <h2>
+            <a
+              href="https://www.nsf.gov/pubs/2020/nsf20572/nsf20572.htm"
+              target="_blank"
+              >NSF DRK12 PI Meeting [CS]</a
+            >
+          </h2>
+          <p>Washington D.C. June 28th 2023</p>
+          <p>Presenters: Corey Schimpf</p>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="rblock" id="design-research-info">
+          <p>
+            <a href="../src/presentation/DRK12poster.pdf"
+              ><img
+                decoding="async"
+                src="images/2023DRK12.png"
+                alt="Image of article"
+                width="300"
+            /></a>
+          </p>
+          <h2>
+            <a
+              href="https://www.nsf.gov/pubs/2020/nsf20572/nsf20572.htm"
+              target="_blank"
+              >NSF DRK12 PI Meeting [DR]</a
+            >
+          </h2>
+          <p>Washington D.C. June 28th 2023</p>
+          <p>Presenters: Corey Schimpf</p>
+        </div>
+        <div class="rblock" id="teaching-info">
+          <p>
+            <a href="../src/presentation/DRK12poster.pdf"
+              ><img
+                decoding="async"
+                src="images/2023DRK12.png"
+                alt="Image of article"
+                width="300"
+            /></a>
+          </p>
+          <h2>
+            <a
+              href="https://www.nsf.gov/pubs/2020/nsf20572/nsf20572.htm"
+              target="_blank"
+              >NSF DRK12 PI Meeting [TC]</a
+            >
+          </h2>
+          <p>Washington D.C. June 28th 2023</p>
+          <p>Presenters: Corey Schimpf</p>
+        </div>
+      </div>
+    </div>
+    <div style="height: 70px"></div>
+    <!-- create a 100px height white space for place holder -->
+    <div class="page">
+      <div class="pagination">
+        <button class="btn1" onclick="backBtn()">
+          <img src="images/arrow.png" /> prev
+        </button>
+        <ul>
+          <li class="link active" value="1" onclick="activeLink()">1</li>
+          <li class="link" value="2" onclick="activeLink()">2</li>
+        </ul>
+        <button class="btn2" onclick="nextBtn()">
+          next<img src="images/arrow.png" />
+        </button>
+      </div>
+    </div>
+    <div style="height: 70px"></div>
+    <script>
+      let link = document.getElementsByClassName("link");
+      let currentValue = 1;
+
+      function activeLink() {
+        for (l of link) {
+          l.classList.remove("active");
+        }
+        event.target.classList.add("active");
+        currentValue = event.target.value;
+      }
+
+      function backBtn() {
+        if (currentValue > 1) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue--;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+
+      function nextBtn() {
+        if (currentValue < 2) {
+          for (l of link) {
+            l.classList.remove("active");
+          }
+          currentValue++;
+          link[currentValue - 1].classList.add("active");
+        }
+      }
+    </script>
+    <script>
+      let checkboxes = document.querySelectorAll("input[type=checkbox]");
+      let button = document.getElementById("filter-btn");
+
+      var checkboxToInfoMap = {
+        engedu: "eng-edu-info",
+        sciedu: "sci-edu-info",
+        learnsci: "learn-sci-info",
+        cs: "cs-info",
+        designresearch: "design-research-info",
+        teaching: "teaching-info",
+      };
+
+      // when page loading shows everything by default
+      checkboxes.forEach(function (checkbox) {
+        let infoContainer = document.getElementById(
+          checkboxToInfoMap[checkbox.id]
+        );
+        infoContainer.style.display = "flex";
+      });
+
+      button.addEventListener("click", function () {
+        // 隐藏所有内容
+        checkboxes.forEach(function (checkbox) {
+          let infoContainer = document.getElementById(
+            checkboxToInfoMap[checkbox.id]
+          );
+          infoContainer.style.display = "none";
+        });
+
+        // 检查是否有任何复选框被选中
+        let isAnyCheckboxChecked = Array.from(checkboxes).some(
+          (checkbox) => checkbox.checked
+        );
+
+        if (isAnyCheckboxChecked) {
+          // 如果有复选框被选中，则只显示选中的内容
+          checkboxes.forEach(function (checkbox) {
+            if (checkbox.checked) {
+              let infoContainer = document.getElementById(
+                checkboxToInfoMap[checkbox.id]
+              );
+              infoContainer.style.display = "flex";
+            }
+          });
+        } else {
+          // 如果没有复选框被选中，则显示所有内容
+          checkboxes.forEach(function (checkbox) {
+            let infoContainer = document.getElementById(
+              checkboxToInfoMap[checkbox.id]
+            );
+            infoContainer.style.display = "flex";
+          });
+        }
+      });
+    </script>
     <div class="footer-logo">
       <!-- create a flex box to contain the 3 logo images -->
       <div class="footer-images">

@@ -50,7 +50,7 @@
                 <a href="design-problems.html">Design Problems</a>
               </li>
               <li>
-                <a href="clue.html">CLUE</a>
+                <a href="mods.html">MODS</a>
               </li>
             </ol>
           </li>
@@ -102,7 +102,7 @@
             <p>Principal Investigator</p>
           </div>
           <div class="team-mem" onclick="fetch_info(1)">
-            <img src="images/defult.png" />
+            <img src="images/shanna.jpg" />
             <h4>Shanna Daly</h4>
             <p>Co-Principal Investigator</p>
           </div>
@@ -112,14 +112,14 @@
             <p>Technical Lead</p>
           </div>
           <div class="team-mem" onclick="fetch_info(3)">
+            <img src="images/jutshi.jpg" />
+            <h4>Jutshi Agarwal</h4>
+            <p>Postdoctoral Associate</p>
+          </div>
+          <div class="team-mem" onclick="fetch_info(4)">
             <img src="images/feq.jpg" />
             <h4>Annie Fan</h4>
             <p>Research Assistant</p>
-          </div>
-          <div class="team-mem" onclick="fetch_info(4)">
-            <img src="images/defult.png" />
-            <h4>Stephanie Harmon</h4>
-            <p>Curriculum Developer</p>
           </div>
         </div>
       </div>
@@ -144,18 +144,18 @@
         <div class="members">
           <div class="team-mem" onclick="fetch_info(5)">
             <img src="images/defult.png" />
-            <h4>Carolyn Giroux</h4>
+            <h4>Stephanie Harmon</h4>
             <p>Curriculum Developer</p>
           </div>
           <div class="team-mem" onclick="fetch_info(6)">
-            <img src="images/defult.png" />
-            <h4>Jacquie Handley</h4>
-            <p>PD Developer</p>
+            <img src="images/carolyn.jpg" />
+            <h4>Carolyn Giroux</h4>
+            <p>Researcher & Curriculum Developer</p>
           </div>
           <div class="team-mem" onclick="fetch_info(7)">
-            <img src="images/defult.png" />
-            <h4>Some Name</h4>
-            <p>Some Position</p>
+            <img src="images/jacquie.jpg" />
+            <h4>Jacquie Handley</h4>
+            <p>Researcher & PD Developer</p>
           </div>
           <div class="team-mem" onclick="fetch_info(8)">
             <img src="images/defult.png" />
@@ -169,46 +169,55 @@
       function fetch_info(i) {
         let profile = [
           "images/corey-schimpf.jpg",
+          "images/shanna.jpg",
           "images/defult.png",
-          "images/defult.png",
+          "images/jutshi.jpg",
           "images/feq.jpg",
           "images/defult.png",
-          "images/defult.png",
-          "images/defult.png",
-          "images/defult.png",
+          "images/carolyn.jpg",
+          "images/jacquie.jpg",
           "images/defult.png",
         ];
         let name = [
           "Corey Schimpf",
           "Shanna Daly",
           "Leslie Bondaryk",
+          "Jutshi Agarwal",
           "Annie Fan",
           "Stephanie Harmon",
           "Carolyn Giroux",
           "Jacquie Handley",
-          "Some Name",
           "Another Name",
         ];
         let status = [
           "Principal Investigator - University at Buffalo",
           "Co-Principal Investigator - University of Michigan",
           "Technical Lead - Concord Consortium",
+          "Postdoctoral Associate - University at Buffalo",
           "Research Assistant - University at Buffalo",
           "Curriculum Developer - Concord Consortium",
-          "Curriculum Developer - University of Michigan",
-          "PD Developer - Purdue University",
-          "Some Position",
+          "Researcher & Curriculum Developer - University of Michigan",
+          "Researcher & PD Developer- Purdue University",
           "Another Position",
+        ];
+        let descriptions = [
+          "Corey Schimpf is the Principal Investigator (PI) for the project. He oversees the curriculum and technology development and co-leads the research design with the team. He is an Assistant Professor of Engineering Education at the University at Buffalo. He has research interests in design thinking, human-centered design and developing scaffolding tools for supporting learning in complex domains.",
+          "Dr. Shanna Daly is an Associate Professor in Mechanical Engineering. She has a B.E. in Chemical Engineering from the University of Dayton and Ph.D. degrees in Engineering Education and Chemistry from Purdue University. Her research characterizes front-end design practices across the student to practitioner continuum, uses these findings to develop tools to support design best practices, and studies the impact of front-end design tools on design success.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Dr. Jutshi Agarwal works in designing research questions and study methods. She has a PhD in Engineering Education from the University of Cincinnati as the first doctoral graduate of the department. Her research interests are preparing future engineering faculty and teaching development, team effectiveness in classroom settings, and using engineering tools to solve problems in engineering education. Fun fact: She speaks 4 languages.",
+          "Annie Fan contributes to the project as a Research Assistant and the Front End Developer. She is an undergraduate student majoring in Computer Engineering at the University at Buffalo. Her responsibilities includes the development of the project's website and assist with research such as scholarly disseminations and literature reviews.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "Dr. Carolyn Giroux is an educational researcher and curriculum developer. Her research interests include disciplinary literacy teaching and learning, engineering literacy, and educational technology. She has a PhD in educational studies from the University of Michigan and a master's degree in teaching from Teachers College, Columbia University.",
+          "Dr. Jacquie Handley is a visiting Assistant Professor at  Purdue University. Her background combines engineering training with science education and learning science to work on equitable and liberatory engineering program design. She supports the curriculum development and research and leads the development of professional support for instructors. She is excited about supporting teachers in front-end design work!",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         ];
         document.getElementById("profile").src = profile[i];
         document.getElementById("name").innerHTML = name[i];
         document.getElementById("status").innerHTML = status[i];
-        document.getElementById("about").innerHTML =
-          name[i] +
-          " " +
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.";
+        document.getElementById("about").innerHTML = descriptions[i];
       }
     </script>
+
     <div class="footer-logo">
       <!-- create a flex box to contain the 3 logo images -->
       <div class="footer-images">
